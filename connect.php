@@ -11,7 +11,7 @@ $k=$_POST['g'];
 
 mysql_connect("localhost","root","");
 mysql_select_db("sbjit");
-$query="SELECT * FROM student WHERE name='$u' AND email='$v'";
+$query="SELECT * FROM student WHERE name='$u'";
 $result=mysql_query($query);
 $row=mysql_num_rows($result);
 if($row==0)
@@ -33,7 +33,7 @@ else
 {
  echo"<center>";
  echo"<br><br><br><br><br><br>";
-echo"USER ALREADY EXITS";
+echo"USER ALREADY EXITS ..!<br> PLEASE USE DIFFRENT USERNAME OR LOGIN";
 echo"<br><br>";
 echo"<a href='main.php'>CLICK HERE TO RETURN TO MAIN PAGE AND LOGIN </a>";
 echo"<br><br>";
